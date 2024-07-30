@@ -1,0 +1,1 @@
+export {getNewPostId} from "./getNewId.ts";
