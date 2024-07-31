@@ -133,10 +133,12 @@ export const postsSlice = createSlice({
       // that's I'm using this...
       .addCase(deleteAllPosts.rejected, (state) => {
         state.all = [];
+      })
+      .addCase(deletePostById.rejected, (state) => {
+        state.all = [];
       });
   },
 });
-
 
 export const selectAllPosts = (state: RootState) => state.posts.all;
 
